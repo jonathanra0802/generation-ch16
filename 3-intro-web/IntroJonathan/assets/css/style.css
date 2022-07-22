@@ -1,0 +1,6 @@
+/*  CSS(Hoja de estilos en cascada) este es el encargado de darle estilo a la pagina */
+ 
+ /* Sirve para comprobar que el CSS esta enlazado con el HTML */
+ body {
+    background-color: rgb(112, 74, 179);
+ }
