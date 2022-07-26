@@ -12,7 +12,7 @@
         p.aviso{
             color: blueviolet;
         }
-        div.nuevo{
+        div.nuevo{ /* Aqui lo unico que se va a colorear es el div de abajo con la class nuevo */
             color: rgb(251, 41, 41);
         }
         /* Se pone dentro del head cuando quieres que varios elementos muestren el mismo tono de color   */
@@ -26,23 +26,51 @@
  */
     </style>
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-
+    <style>
+        *.univ{/* Todos los elem3entos que tengan la clase univ van a ser modificados por este apartado */
+            color: rgb(255, 160, 45);
+        }
+    </style>
+        <style>
+         .univ1{
+            color: rgb(47, 244, 36);
+         }   
+        </style>
 </head>
 <body>
     <!-- Se le pone a style dentro de un apartado cuando solo quieres que el cambio se vea en ese apartado nadamas. Para este caso solo quiero que el contenido de h1 muestre ese tono -->
     <!-- <h1 style="color:rgb(156, 28, 98);">En este documento vamos a ver el estilo de la pagina</h1> -->
     <h1>En este documento vamos a ver css </h1>
+    <p class="univ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo culpa quo, recusandae nobis ut eveniet et unde nihil dolor ex aut, impedit fugit! Assumenda eius repellendus sequi atque mollitia odio.</p>
+
+    <div class="univ1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsam quibusdam delectus, aspernatur a corporis nulla debitis magnam necessitatibus eveniet ipsa eaque dolor numquam, maxime ab quos voluptas voluptatibus tenetur.
+    </div>
     
     <div class="nuevo">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
         Quibusdam adipisci expedita provident? <br> 
         Repudiandae ullam iusto, asperiores dolore nisi inventore dolores officiis ipsum, praesentium tempore soluta ab neque velit modi quis!
     </div>
+    <!-- Al selector de clase se le conoce tambien como E.e -->
     <p class="aviso">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
     </p>
 
     <br><h2>Este texto esta en otro color</h2>
 
+
+<!-- Lista -->
+<link rel="stylesheet" href="assets/css/selector.css">
+    <p> Esto es un párrafo 1</p>
+<div class="lista">
+<ul>
+  <li>
+    esto es una lista
+    <p class="interno">esto es otro párrafo interno </p>
+  </li>
+</ul>
+<p>esto es otro párrafo pero externo</p>
 </body>
+
 </html>

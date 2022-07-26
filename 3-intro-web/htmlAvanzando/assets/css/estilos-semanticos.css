@@ -1,0 +1,33 @@
+/* body{
+    width:  1200px;
+} */
+*{
+    font-size: 1.5rem;
+}
+header {
+    background-color: aquamarine;
+    width: auto;
+    height: auto;
+}
+main{
+    background-color: blueviolet;
+    width: auto;
+    height: auto;
+}
+aside{
+    background-color: brown;
+    width: auto;
+    height: auto;
+}
+footer{
+    background-color: greenyellow;
+    width: auto;
+    height: auto;
+}
+
+.cuadro{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(217, 198, 27);
+}
