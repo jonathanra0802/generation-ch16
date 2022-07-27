@@ -1,0 +1,13 @@
+/* Importado el estilo del texto para usar estilos externos */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Mochiy+Pop+One&display=swap');
+
+
+
+h1{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+    
+
+p{
+    font-family: 'Cormorant SC', serif;
+}

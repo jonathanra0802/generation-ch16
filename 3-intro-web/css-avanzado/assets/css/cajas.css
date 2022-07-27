@@ -1,0 +1,56 @@
+.cuadro {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    /* display: inline-block; */
+    padding: 20px;
+    border: 10px solid yellow;
+    border-radius: 50%;
+}
+.el-1{
+    background-color: rgb(219, 76, 76);
+    margin: 20px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* margin-left: auto;
+    margin-right: auto;
+     */
+}
+.el-2{/* Absolute - sale del flujo y se ubica con respecto a la pantalla
+    */
+    background-color: rgb(119, 215, 50);
+    margin: 20px;
+    position: absolute;
+    top: 100px;
+    right: 250px;
+
+    /*     margin-left: auto;
+    margin-right: auto; */
+}
+.el-3{ /* relative - se mueve a partir de su posición original
+    ubica con respecto a la pantalla
+     */
+    background-color: rgb(205, 32, 156);
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    left: 200px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.el-4{
+    background-color: rgb(18, 80, 172);
+    margin: 20px;
+    position: static;
+    /* margin-left: auto;
+    margin-right: auto;
+ */}
+.el-5{
+    background-color: rgb(213, 226, 35);
+    margin: 20px;
+    position: static;/* 
+    margin-left: auto;
+    margin-right: auto; */
+}
