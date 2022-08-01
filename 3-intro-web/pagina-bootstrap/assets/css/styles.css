@@ -1,0 +1,12 @@
+.img-carousel{
+    height: calc(60vh - 76px);
+    object-fit: cover;
+}
+.img-carta{
+    height: 300px;
+    object-fit: cover; /* Sirve para modificar el comportamiento de la imagen */
+}
+.caja{
+    position: relative;
+    top: -100px;
+}
