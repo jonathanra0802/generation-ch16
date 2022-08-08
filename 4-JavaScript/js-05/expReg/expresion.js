@@ -9,6 +9,20 @@
 //let buscar= /sol/;
 //console.log(buscar.test(texto));
 
-let texto01= "Te marqué anoche"
+/* let texto01= "Te marqué anoche"
 let buscar=/[eo]/;
-console.log(buscar.test(texto01));
+console.log(buscar.test(texto01)); */
+
+//Nuevo ejemplo para buscar 
+/* let texto02 = "los numeros primos son: 2 3 4 7 dentro de los 10 primeros numeros"
+
+let buscar = /\d{3}/
+console.log(buscar.test(texto02));
+ */
+
+//Metodo para validad un correo electronico
+let texto04 ="jon@gmail.com"
+let buscar = /[\w]+@{1}[\w]+\.[a-z]{2,3}/;
+console.log(buscar.test(texto04));
+
+//Metodo para funcion constructora 
