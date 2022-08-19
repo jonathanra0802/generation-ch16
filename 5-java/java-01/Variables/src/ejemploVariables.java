@@ -45,6 +45,9 @@ public class ejemploVariables {
         System.out.println("Short corresponde en bits: " + Short.SIZE);
         System.out.println("Short valor maximo: " + Short.MAX_VALUE );
         System.out.println("Short valor minimo: " + Short.MIN_VALUE );
+
+
+
     }
 }
 
