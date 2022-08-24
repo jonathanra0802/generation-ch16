@@ -29,6 +29,7 @@ public class Colecciones {
             System.out.println(elemento);
         }
         //clases envolventes
+        //rapper es la clase base
         int num1 = 10;
         Integer num2=10;
 
