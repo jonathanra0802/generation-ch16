@@ -8,6 +8,8 @@ apellido CHAR(50) NOT NULL,
 telefono CHAR(50) NOT NULL, 
 direccion VARCHAR(150) NOT NULL);
 
+DROP TABLE Clientes;
+
 INSERT INTO clientes (nombre, apellido, telefono, direccion)
 VALUES('Pedro', 'Paramo', '5576231829', 'Comala'),
 ('Raul', 'Sanchez', '5576231239', 'Comala'),

@@ -1,0 +1,42 @@
+-- CREAR UNA BASE DE DATOS LLAMADA GENERATION 
+CREATE DATABASE generation;
+
+-- USAMOS USE PARA DECIRLE A MySQL QUE VAMOS A TRABAJAR EN ESA BASE 
+USE generation; 
+-- CREACION DE LA TABLA
+CREATE TABLE cohorte_16 (
+-- LA PK DEBE SER AUTOGENERADA ESO SE HACE CON UN AUTO_INCREMENT
+alumno_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nombre CHAR(50) NOT NULL, 
+apellido CHAR(50) NOT NULL, 
+compañeros INT NOT NULL, 
+direccion VARCHAR(50) NOT NULL, 
+proyecto VARCHAR(150) NOT NULL);
+
+-- AGREGAR 5 VALORES CON VALORES INVENTADOS
+INSERT INTO cohorte_16 (nombre, apellido, compañeros, direccion, proyecto)
+VALUES('Jonathan','Ramirez','7', 'Iztapalacra', 'Ramaka'),
+('Alejandro','Ramirez','8', 'Xochimilco', 'Shades'),
+('Edith','Campos','6', 'Iztacalco', 'Botanica'),
+('Daniel','Rosas','9', 'Azcapotzalco', 'Dinoreps'),
+('David','Hernandez','5', 'Coyoacan', 'Tecnogurus');
+
+-- VISUALIZO LA TABLA PARA PODER VER QUE LOS ELEMENTOS DE HAYAN CARGADO DE MANERA CORRECTA
+select * from cohorte_16;
+
+-- ELIMINAMOS LA FILA CON EL ID #3
+DELETE FROM cohorte_16
+WHERE alumno_id =3;
+
+-- CAMBIAR EL NOMBRE DEL ALUMNO CON EL ID #5
+-- USAMOS EL WHERE PARA ESPECIFICAR QUE SOLO QUEREMOS CAMBIAR EL VALOR DE NOMBRE DEL ALUMNO #5
+UPDATE cohorte_16 SET nombre='CambioDeNombre' WHERE alumno_id=5;
+
+-- SELECCIONAR Y SOLO MOSTRAR LOS VALORES DE: NOMBRE Y APELLIDOS 
+SELECT nombre, apellido FROM cohorte_16;
+
+-- ORDENARLAS POR APELLIDO EN ORDEN ASCENDENTE
+SELECT * FROM cohorte_16 ORDER BY apellido ASC;
+
+-- ELABORADO POR JONATHAN RAMIREZ ALONSO 
+-- GUARDAR Y SUBIR EL SCRIPT
