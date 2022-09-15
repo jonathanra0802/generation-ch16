@@ -6,6 +6,7 @@ import com.generation.jra.models.UsuarioModel;
 import com.generation.jra.repositories.UsuarioRepository;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -22,5 +23,21 @@ public class UsuarioService {
 	public UsuarioModel guardarUsuario(UsuarioModel usuario){
         return usuariorepository.save(usuario);
     }
+	public Optional<UsuarioModel> obtenerPorId(Long id){
+        return usuariorepository.findById(id);
+    }
+	public ArrayList<UsuarioModel>  obtenerPorPrioridad(Integer prioridad) {
+        return usuariorepository.findByPrioridad(prioridad);
+    }
+	public boolean eliminarUsuario(Long id) {
+        try{
+            usuariorepository.deleteById(id);
+            return true;
+        }catch(Exception err){
+            return false;
+        }
+    }
+
+
 
 }
